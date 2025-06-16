@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 80
 
 # 7. Command to run your app with uvicorn
-CMD ["uvicorn", "Real_estate_ai:app", "--host", "0.0.0.0", "--port", 10000
+CMD ["uvicorn", "Real_estate_ai:app", "--host", "0.0.0.0", "--port", "80"]
