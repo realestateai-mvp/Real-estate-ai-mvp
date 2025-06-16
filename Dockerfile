@@ -9,6 +9,9 @@ COPY requirements.txt .
 
 # 4. Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
+RUN which uvicorn
+RUN pip show uvicorn
+ENV PATH="/root/.local/bin:${PATH}"
 
 # 5. Then copy all files into the container
 COPY . .
