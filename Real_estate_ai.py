@@ -1,7 +1,6 @@
 from fastapi import FastAPI
-
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"message": "Real Estate AI is working!"}
+def root():
+    return {"message": "Real estate backend live"}
