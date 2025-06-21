@@ -1,18 +1,17 @@
-# Use lightweight Python image
 FROM python:3.11-slim
 
 # Set working directory
 WORKDIR /app
 
-# Install dependencies
+# Copy requirements and install
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy everything else
 COPY . .
 
-# Expose port
+# Expose port 80
 EXPOSE 80
 
-# Run uvicorn using full path (safe)
+# Run the app with uvicorn via python module (more reliable)
 CMD ["python", "-m", "uvicorn", "Real_estate_ai:app", "--host", "0.0.0.0", "--port", "80"]
