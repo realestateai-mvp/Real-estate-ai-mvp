@@ -12,7 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN which uvicorn && uvicorn --version
 RUN pip show uvicorn
 
-
 # 5. Then copy all files into the container
 COPY . .
 
