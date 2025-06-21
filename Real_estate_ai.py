@@ -3,5 +3,5 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-async def root():
-    return {"message": "Hello from FastAPI!"}
+def read_root():
+    return {"message": "Real Estate AI is working!"}
