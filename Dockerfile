@@ -4,9 +4,8 @@ FROM python:3.11-slim
 WORKDIR /app
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN which uvicorn
 RUN pip show uvicorn
-ENV PATH="/root/.local/bin:${PATH}"
+RUN which uvicorn
 
 # Copy everything else
 COPY . .
