@@ -1,2 +1,2 @@
-uvicorn main.py--reload
+uvicorn
 fastapi
