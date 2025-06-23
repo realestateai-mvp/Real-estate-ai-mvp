@@ -1,2 +1,2 @@
-uvicorn[srandard
+uvicorn[srandard]
 fastapi
