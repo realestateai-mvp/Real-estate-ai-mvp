@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 80
 
 # Run the app with uvicorn via python module (more reliable)
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
