@@ -1,2 +1,2 @@
-uvicorn
+uvicorn Real_estate_ai:app --reload
 fastapi
