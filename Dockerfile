@@ -6,8 +6,10 @@ WORKDIR /app
 
 # 3. Copy and install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip uvicorn
+RUN pip install --no-cache-dir -r requirements.txt && \
+    which python && \
+    which uvicorn && \
+    python -m uvicorn --version
 
 # 4. Copy project files
 COPY . .
