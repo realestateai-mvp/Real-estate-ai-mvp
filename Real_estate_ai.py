@@ -3,4 +3,4 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Real estate backend live"}
+    return {"message": "Real estate ai is live"}
