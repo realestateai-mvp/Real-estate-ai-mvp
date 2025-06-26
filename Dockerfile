@@ -19,4 +19,4 @@ ENV PATH="/root/.local/bin:$PATH"
 EXPOSE 80
 
 # 7. Run uvicorn with full path to the app
-CMD ["uvicorn", "Real_estate_ai:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "Real_estate_ai.py", "--host", "0.0.0.0", "--port", "80"]
