@@ -12,10 +12,6 @@ RUN pip uvicorn
 # 4. Copy project files
 COPY . .
 
-# 5. Ensure /root/.local/bin is in PATH (for pip-installed binaries)
-ENV PATH="/root/.local/bin:$PATH"
-
-# 6. Expose port
 EXPOSE 80
 
 # 7. Run uvicorn with full path to the app
